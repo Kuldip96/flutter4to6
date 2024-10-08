@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class Lacture05 extends StatefulWidget {
   const Lacture05({super.key});
@@ -19,12 +20,12 @@ class _Lacture05State extends State<Lacture05> {
           // width: 100,
           // backgroundColor: Colors.grey,
           child: ListView(
-            children: [
-              const DrawerHeader(
+            children: const [
+              DrawerHeader(
                 child: Text('data'),
                 decoration: BoxDecoration(color: Colors.yellow),
               ),
-              const ListTile(
+              ListTile(
                 title: Text("setting"),
                 subtitle: Text('data'),
                 leading: Icon(Icons.settings),
@@ -33,7 +34,7 @@ class _Lacture05State extends State<Lacture05> {
                 // isThreeLine: true,
                 // hoverColor: Colors.black,
               ),
-              const ListTile(
+              ListTile(
                 title: Text("setting"),
                 subtitle: Text('data'),
                 leading: Icon(Icons.settings),
@@ -45,52 +46,67 @@ class _Lacture05State extends State<Lacture05> {
             ],
           ),
         ),
-        body: const Column(
+        body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'data',
               style: TextStyle(fontSize: 30),
             ),
-            Divider(
+            const Divider(
               color: Colors.red,
               endIndent: 30,
               indent: 30,
               height: 10,
               thickness: 0.5,
             ),
-            Text(
+            const Text(
               'data',
               style: TextStyle(fontSize: 30),
             ),
-            Divider(),
-            Text(
+            const Divider(),
+            const Text(
               'data',
               style: TextStyle(fontSize: 30),
             ),
-            Divider(),
-            Text(
+            const Divider(),
+            const Text(
               'data',
               style: TextStyle(fontSize: 30),
             ),
-            Divider(),
-            Text(
+            const Divider(),
+            const Text(
               'data',
               style: TextStyle(fontSize: 30),
             ),
-            Divider(),
-            Row(
+            const Divider(),
+            const Row(
               // mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text('data'),
-                Spacer(),
-                Text('data'),
-                Spacer(
-                  
+                // Spacer(),
+                Divider(
+                  color: Colors.red,
                 ),
                 Text('data'),
+                Spacer(),
                 Text('data'),
+                const Text('data'),
               ],
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            RichText(
+              text: const TextSpan(
+                  children: [
+                    TextSpan(
+                        text: "Read More",
+                        style: TextStyle(color: Colors.brown, fontSize: 30)),
+                  ],
+                  style: TextStyle(color: Colors.black, fontSize: 30),
+                  text:
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. "),
             ),
           ],
         ),
