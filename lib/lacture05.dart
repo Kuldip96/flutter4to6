@@ -20,11 +20,11 @@ class _Lacture05State extends State<Lacture05> {
           // backgroundColor: Colors.grey,
           child: ListView(
             children: [
-              DrawerHeader(
+              const DrawerHeader(
                 child: Text('data'),
                 decoration: BoxDecoration(color: Colors.yellow),
               ),
-              ListTile(
+              const ListTile(
                 title: Text("setting"),
                 subtitle: Text('data'),
                 leading: Icon(Icons.settings),
@@ -33,7 +33,7 @@ class _Lacture05State extends State<Lacture05> {
                 // isThreeLine: true,
                 // hoverColor: Colors.black,
               ),
-              ListTile(
+              const ListTile(
                 title: Text("setting"),
                 subtitle: Text('data'),
                 leading: Icon(Icons.settings),
@@ -44,6 +44,55 @@ class _Lacture05State extends State<Lacture05> {
               ),
             ],
           ),
+        ),
+        body: const Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'data',
+              style: TextStyle(fontSize: 30),
+            ),
+            Divider(
+              color: Colors.red,
+              endIndent: 30,
+              indent: 30,
+              height: 10,
+              thickness: 0.5,
+            ),
+            Text(
+              'data',
+              style: TextStyle(fontSize: 30),
+            ),
+            Divider(),
+            Text(
+              'data',
+              style: TextStyle(fontSize: 30),
+            ),
+            Divider(),
+            Text(
+              'data',
+              style: TextStyle(fontSize: 30),
+            ),
+            Divider(),
+            Text(
+              'data',
+              style: TextStyle(fontSize: 30),
+            ),
+            Divider(),
+            Row(
+              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text('data'),
+                Spacer(),
+                Text('data'),
+                Spacer(
+                  
+                ),
+                Text('data'),
+                Text('data'),
+              ],
+            ),
+          ],
         ),
       ),
     );
