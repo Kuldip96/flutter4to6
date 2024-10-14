@@ -77,6 +77,18 @@ class _Lacture6State extends State<Lacture6> {
               ),
             ),
           ),
+          ElevatedButton(
+            onPressed: () {},
+            style: ButtonStyle(
+              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18.0),
+                  side: const BorderSide(color: Colors.red),
+                ),
+              ),
+            ),
+            child: Text('Press'),
+          ),
         ],
       ),
     );
