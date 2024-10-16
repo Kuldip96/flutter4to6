@@ -7,6 +7,7 @@ import 'package:demoapp/lacture04.dart';
 import 'package:demoapp/lacture05.dart';
 import 'package:demoapp/lacture07.dart';
 import 'package:demoapp/lacture6.dart';
+import 'package:demoapp/lacture8.dart';
 import 'package:demoapp/row_column.dart';
 import 'package:demoapp/scafflod_screen.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Lacture07(),
+      home: const Lacture08(),
     );
   }
 }
