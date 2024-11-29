@@ -11,38 +11,141 @@ class _Lacture12State extends State<Lacture12> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      initialIndex: 1,
+      length: 5,
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.grey,
         ),
-        body: const Column(
+        body: Column(
           children: [
-            TabBar(
-              // dividerColor: Colors.red,
-              // dividerHeight: 0,
-
-              // indicator: BoxDecoration(
-              // // color: Colors.red,
-              // ),
-              // indicatorSize: TabBarIndicatorSize.label,
-              // indicatorWeight: 20,
-
-              tabs: [
-                Tab(
-                  child: Icon(Icons.settings),
-                ),
-                Icon(Icons.add),
-                Icon(Icons.delete_sharp),
-              ],
+            Container(
+              height: 100,
+              child: TabBar(
+                dividerHeight: 0,
+                indicator: const BoxDecoration(),
+                tabs: [
+                  Tab(
+                    height: 70,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: 44,
+                          width: 44,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: const Icon(
+                            Icons.star,
+                            color: Colors.white,
+                          ),
+                        ),
+                        const Text('data')
+                      ],
+                    ),
+                  ),
+                  Tab(
+                    height: 70,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: 44,
+                          width: 44,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: const Icon(
+                            Icons.chair_alt,
+                            color: Colors.white,
+                          ),
+                        ),
+                        const Text('data')
+                      ],
+                    ),
+                  ),
+                  Tab(
+                    height: 70,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: 44,
+                          width: 44,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: const Icon(
+                            Icons.table_chart,
+                            color: Colors.white,
+                          ),
+                        ),
+                        const Text('data')
+                      ],
+                    ),
+                  ),
+                  Tab(
+                    height: 70,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: 44,
+                          width: 44,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: const Icon(
+                            Icons.bed,
+                            color: Colors.white,
+                          ),
+                        ),
+                        const Text('data')
+                      ],
+                    ),
+                  ),
+                  Tab(
+                    height: 70,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: 44,
+                          width: 44,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: const Icon(
+                            Icons.bed,
+                            color: Colors.white,
+                          ),
+                        ),
+                        const Text('data')
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
-            Expanded(
+            const Expanded(
               child: TabBarView(children: [
                 Center(
                   child: Text("It's cloudy here"),
                 ),
                 Center(
                   child: Text("It's rainy here"),
+                ),
+                Center(
+                  child: Text("It's sunny here"),
+                ),
+                Center(
+                  child: Text("It's sunny here"),
                 ),
                 Center(
                   child: Text("It's sunny here"),
