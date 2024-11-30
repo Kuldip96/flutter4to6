@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 class Lacture12 extends StatefulWidget {
@@ -8,6 +10,7 @@ class Lacture12 extends StatefulWidget {
 }
 
 class _Lacture12State extends State<Lacture12> {
+  int selectColor = 0;
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -19,9 +22,15 @@ class _Lacture12State extends State<Lacture12> {
         ),
         body: Column(
           children: [
-            Container(
+            SizedBox(
               height: 100,
               child: TabBar(
+                onTap: (int value) {
+                  setState(() {
+                    log(value.toString());
+                    selectColor = value;
+                  });
+                },
                 dividerHeight: 0,
                 indicator: const BoxDecoration(),
                 tabs: [
@@ -34,15 +43,17 @@ class _Lacture12State extends State<Lacture12> {
                           height: 44,
                           width: 44,
                           decoration: BoxDecoration(
-                            color: Colors.black,
+                            color:
+                                selectColor == 0 ? Colors.black : Colors.grey,
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          child: const Icon(
+                          child: Icon(
                             Icons.star,
-                            color: Colors.white,
+                            color:
+                                selectColor == 0 ? Colors.white : Colors.black,
                           ),
                         ),
-                        const Text('data')
+                        const Text('data'),
                       ],
                     ),
                   ),
@@ -55,12 +66,14 @@ class _Lacture12State extends State<Lacture12> {
                           height: 44,
                           width: 44,
                           decoration: BoxDecoration(
-                            color: Colors.black,
+                            color:
+                                selectColor == 1 ? Colors.black : Colors.grey,
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          child: const Icon(
+                          child: Icon(
                             Icons.chair_alt,
-                            color: Colors.white,
+                            color:
+                                selectColor == 1 ? Colors.white : Colors.black,
                           ),
                         ),
                         const Text('data')
@@ -76,12 +89,14 @@ class _Lacture12State extends State<Lacture12> {
                           height: 44,
                           width: 44,
                           decoration: BoxDecoration(
-                            color: Colors.black,
+                            color:
+                                selectColor == 2 ? Colors.black : Colors.grey,
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          child: const Icon(
+                          child: Icon(
                             Icons.table_chart,
-                            color: Colors.white,
+                            color:
+                                selectColor == 2 ? Colors.white : Colors.black,
                           ),
                         ),
                         const Text('data')
@@ -97,12 +112,14 @@ class _Lacture12State extends State<Lacture12> {
                           height: 44,
                           width: 44,
                           decoration: BoxDecoration(
-                            color: Colors.black,
+                            color:
+                                selectColor == 3 ? Colors.black : Colors.grey,
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          child: const Icon(
+                          child: Icon(
                             Icons.bed,
-                            color: Colors.white,
+                            color:
+                                selectColor == 3 ? Colors.white : Colors.black,
                           ),
                         ),
                         const Text('data')
@@ -118,15 +135,17 @@ class _Lacture12State extends State<Lacture12> {
                           height: 44,
                           width: 44,
                           decoration: BoxDecoration(
-                            color: Colors.black,
+                            color:
+                                selectColor == 4 ? Colors.black : Colors.grey,
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          child: const Icon(
+                          child: Icon(
                             Icons.bed,
-                            color: Colors.white,
+                            color:
+                                selectColor == 4 ? Colors.white : Colors.black,
                           ),
                         ),
-                        const Text('data')
+                        const Text('data',)
                       ],
                     ),
                   ),
