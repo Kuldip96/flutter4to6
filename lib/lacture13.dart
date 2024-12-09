@@ -22,7 +22,6 @@ class _Lacture13State extends State<Lacture13> {
         backgroundColor: Colors.red,
       ),
       body: ListView(
-        
         children: mapData.map((toElement) {
           return ListTile(
             title: Text(
