@@ -14,6 +14,7 @@ import 'package:demoapp/lacture13.dart';
 import 'package:demoapp/lacture14.dart';
 import 'package:demoapp/lacture6.dart';
 import 'package:demoapp/lacture8.dart';
+import 'package:demoapp/mediaquey.dart';
 import 'package:demoapp/row_column.dart';
 import 'package:demoapp/scafflod_screen.dart';
 import 'package:flutter/material.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const CommanWidget(),
+      home: const MediaqueyWidget(),
     );
   }
 }
