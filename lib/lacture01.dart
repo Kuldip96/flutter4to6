@@ -1,3 +1,4 @@
+import 'package:demoapp/lacture02.dart';
 import 'package:flutter/material.dart';
 
 class Lacture01 extends StatefulWidget {
@@ -62,6 +63,19 @@ class _Lacture01State extends State<Lacture01> {
               // ),
             ),
             Image.asset('images/images.png'),
+            ElevatedButton(
+                onPressed: () {
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) {
+                  //       return Lacture02();
+                  //     },
+                  //   ),
+                  // );
+                  Navigator.pushNamed(context, 'lacture2');
+                },
+                child: Text('Next'))
           ],
         ),
       ),

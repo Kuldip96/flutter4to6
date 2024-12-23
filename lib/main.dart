@@ -1,22 +1,7 @@
-import 'package:demoapp/container_screen.dart';
-import 'package:demoapp/drower_widget.dart';
 import 'package:demoapp/lacture01.dart';
 import 'package:demoapp/lacture02.dart';
-import 'package:demoapp/lacture03.dart';
-import 'package:demoapp/lacture04.dart';
-import 'package:demoapp/lacture05.dart';
-import 'package:demoapp/lacture07.dart';
-import 'package:demoapp/lacture09.dart';
-import 'package:demoapp/lacture10.dart';
-import 'package:demoapp/lacture11.dart';
-import 'package:demoapp/lacture12.dart';
-import 'package:demoapp/lacture13.dart';
-import 'package:demoapp/lacture14.dart';
-import 'package:demoapp/lacture6.dart';
-import 'package:demoapp/lacture8.dart';
 import 'package:demoapp/mediaquey.dart';
-import 'package:demoapp/row_column.dart';
-import 'package:demoapp/scafflod_screen.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -36,7 +21,13 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MediaqueyWidget(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Lacture01(),
+        'lacture2': (context) => Lacture02(),
+        
+      },
+      // home: Lacture01(),
     );
   }
 }
