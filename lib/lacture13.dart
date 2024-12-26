@@ -26,7 +26,7 @@ class _Lacture13State extends State<Lacture13> {
           return ListTile(
             title: Text(
               toElement["id"].toString(),
-              style: TextStyle(color: Colors.black),
+              style: const TextStyle(color: Colors.black),
             ),
             subtitle: Text(toElement["name"].toString()),
             leading: Image.asset(toElement["image"].toString()),

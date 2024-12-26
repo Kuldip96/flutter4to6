@@ -1,6 +1,7 @@
 import 'package:demoapp/lacture01.dart';
 import 'package:demoapp/lacture02.dart';
 import 'package:demoapp/lacture15.dart';
+import 'package:demoapp/lacture16.dart';
 import 'package:demoapp/mediaquey.dart';
 
 import 'package:flutter/material.dart';
@@ -22,11 +23,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      initialRoute: 'lacture15',
+      initialRoute: 'lacture16',
       routes: {
         '/': (context) => Lacture01(),
         'lacture2': (context) => Lacture02(),
         'lacture15': (context) => Lacture15(),
+        'lacture16': (context) => Lacture16(),
       },
       // home: Lacture01(),
     );

@@ -67,13 +67,13 @@ class DetailsScreen extends StatelessWidget {
             height: 500,
             width: double.infinity,
             child: Image.asset(
-              image??"",
+              image ?? "",
               fit: BoxFit.fill,
             ),
           ),
           Row(
             children: [
-              Text(title??"null"),
+              Text(title ?? "null"),
               Spacer(),
               Text("\$${subtitle.toString()}"),
             ],
