@@ -25,6 +25,7 @@ class _Lacture12State extends State<Lacture12> {
             SizedBox(
               height: 100,
               child: TabBar(
+                labelColor: Colors.red,
                 onTap: (int value) {
                   setState(() {
                     log(value.toString());
@@ -39,20 +40,21 @@ class _Lacture12State extends State<Lacture12> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Container(
-                          height: 44,
-                          width: 44,
-                          decoration: BoxDecoration(
-                            color:
-                                selectColor == 0 ? Colors.black : Colors.grey,
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          child: Icon(
-                            Icons.star,
-                            color:
-                                selectColor == 0 ? Colors.white : Colors.black,
-                          ),
-                        ),
+                        Text("data"),
+                        // Container(
+                        //   height: 44,
+                        //   width: 44,
+                        //   decoration: BoxDecoration(
+                        //     color:
+                        //         selectColor == 0 ? Colors.black : Colors.grey,
+                        //     borderRadius: BorderRadius.circular(12),
+                        //   ),
+                        //   child: Icon(
+                        //     Icons.star,
+                        //     color:
+                        //         selectColor == 0 ? Colors.white : Colors.black,
+                        //   ),
+                        // ),
                         const Text('data'),
                       ],
                     ),
@@ -145,7 +147,9 @@ class _Lacture12State extends State<Lacture12> {
                                 selectColor == 4 ? Colors.white : Colors.black,
                           ),
                         ),
-                        const Text('data',)
+                        const Text(
+                          'data',
+                        )
                       ],
                     ),
                   ),
