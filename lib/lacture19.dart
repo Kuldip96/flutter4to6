@@ -33,6 +33,8 @@ class _Lacture19State extends State<Lacture19> {
           ),
           Text(currentvolume.toString()),
           Checkbox(
+
+            
               value: currentValue,
               onChanged: (value) {
                 setState(() {
