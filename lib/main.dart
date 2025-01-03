@@ -5,6 +5,7 @@ import 'package:demoapp/lacture15.dart';
 import 'package:demoapp/lacture16.dart';
 import 'package:demoapp/lacture17.dart';
 import 'package:demoapp/lacture18.dart';
+import 'package:demoapp/lacture19.dart';
 import 'package:demoapp/mediaquey.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
             //   'lacture16': (context) => Lacture16(),
             //   'lacture17': (context) => Lacture17(),
             // },
-            home: Lacture18(),
+            home: Lacture19(),
           );
         });
   }
