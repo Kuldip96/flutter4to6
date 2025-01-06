@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class Lacture19 extends StatefulWidget {
   const Lacture19({super.key});
@@ -33,8 +34,6 @@ class _Lacture19State extends State<Lacture19> {
           ),
           Text(currentvolume.toString()),
           Checkbox(
-
-            
               value: currentValue,
               onChanged: (value) {
                 setState(() {
@@ -59,7 +58,30 @@ class _Lacture19State extends State<Lacture19> {
                   currentValue1 = value;
                 });
               }),
-          CupertinoSwitch(value: true, onChanged: (value) {})
+          CupertinoSwitch(value: true, onChanged: (value) {}),
+          ElevatedButton(
+              onPressed: () {
+                final snackbar = SnackBar(
+                  backgroundColor: Colors.red,
+                  duration: Duration(seconds: 3),
+                  content: Text('Show Snackbar'),
+                  action: SnackBarAction(label: 'Undo', onPressed: () {}),
+                );
+                ScaffoldMessenger.of(context).showSnackBar(snackbar);
+              },
+              child: Text("SnackBar")),
+          ElevatedButton(
+              onPressed: () {
+                Fluttertoast.showToast(
+                    msg: "This is Center Short Toast",
+                    toastLength: Toast.LENGTH_LONG,
+                    gravity: ToastGravity.CENTER_LEFT,
+                    timeInSecForIosWeb: 1,
+                    backgroundColor: Colors.transparent,
+                    textColor: Colors.white,
+                    fontSize: 16.0);
+              },
+              child: Text('Fluuter Toast'))
         ],
       ),
     );
