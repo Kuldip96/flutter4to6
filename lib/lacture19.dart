@@ -1,3 +1,4 @@
+import 'package:demoapp/lacture07.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -13,6 +14,15 @@ class _Lacture19State extends State<Lacture19> {
   double currentvolume = 10;
   bool currentValue = false;
   bool currentValue1 = false;
+  @override
+  void initState() {
+    Future.delayed(Duration(seconds: 3), () {
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => Lacture07()));
+    });
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
