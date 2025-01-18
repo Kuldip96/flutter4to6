@@ -9,7 +9,7 @@ class Lacture20 extends StatefulWidget {
 }
 
 class _Lacture20State extends State<Lacture20> {
-  TimeOfDay _time = TimeOfDay(hour: 7, minute: 15);
+  TimeOfDay _time = const TimeOfDay(hour: 7, minute: 15);
 
   void _selectTime() async {
     final TimeOfDay? newTime = await showTimePicker(
@@ -42,20 +42,20 @@ class _Lacture20State extends State<Lacture20> {
           children: [
             ElevatedButton(
               onPressed: _selectTime,
-              child: Text('SELECT TIME'),
+              child: const Text('SELECT TIME'),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Text(
               'Selected time: ${_time.format(context)}',
             ),
             Container(
-                padding: EdgeInsets.all(15),
+                padding: const EdgeInsets.all(15),
                 height: MediaQuery.of(context).size.width / 3,
                 child: Center(
                     child: TextField(
                   controller: dateInput,
                   //editing controller of this TextField
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                       icon: Icon(Icons.calendar_today), //icon of text field
                       labelText: "Enter Date" //label text of field
                       ),

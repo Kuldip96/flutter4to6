@@ -1,3 +1,4 @@
+import 'package:country_picker/country_picker.dart';
 import 'package:demoapp/demo.dart';
 import 'package:demoapp/lacture01.dart';
 import 'package:demoapp/lacture02.dart';
@@ -8,6 +9,7 @@ import 'package:demoapp/lacture17.dart';
 import 'package:demoapp/lacture18.dart';
 import 'package:demoapp/lacture19.dart';
 import 'package:demoapp/lacture20.dart';
+import 'package:demoapp/lacture21.dart';
 import 'package:demoapp/mediaquey.dart';
 import 'package:demoapp/todo.dart';
 import 'package:flutter/cupertino.dart';
@@ -31,6 +33,51 @@ class MyApp extends StatelessWidget {
         splitScreenMode: true,
         builder: (context, child) {
           return MaterialApp(
+            supportedLocales: [
+              const Locale('en'),
+              const Locale('ar'),
+              const Locale('es'),
+              const Locale('de'),
+              const Locale('fr'),
+              const Locale('el'),
+              const Locale('et'),
+              const Locale('nb'),
+              const Locale('nn'),
+              const Locale('pl'),
+              const Locale('pt'),
+              const Locale('ru'),
+              const Locale('hi'),
+              const Locale('ne'),
+              const Locale('uk'),
+              const Locale('hr'),
+              const Locale('tr'),
+              const Locale('lv'),
+              const Locale('lt'),
+              const Locale('ku'),
+              const Locale('nl'),
+              const Locale('it'),
+              const Locale('ko'),
+              const Locale('ja'),
+              const Locale('id'),
+              const Locale('cs'),
+              const Locale('ht'),
+              const Locale('sk'),
+              const Locale('ro'),
+              const Locale('bg'),
+              const Locale('ca'),
+              const Locale('he'),
+              const Locale('fa'),
+              const Locale('da'),
+              const Locale.fromSubtags(
+                  languageCode: 'zh',
+                  scriptCode: 'Hans'), // Generic Simplified Chinese 'zh_Hans'
+              const Locale.fromSubtags(
+                  languageCode: 'zh',
+                  scriptCode: 'Hant'), // Generic traditional Chinese 'zh_Hant'
+            ],
+            localizationsDelegates: [
+              CountryLocalizations.delegate,
+            ],
             debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
             theme: ThemeData(
@@ -45,7 +92,7 @@ class MyApp extends StatelessWidget {
             //   'lacture16': (context) => Lacture16(),
             //   'lacture17': (context) => Lacture17(),
             // },
-            home: Lacture20(),
+            home: Lacture21(),
           );
         });
   }
