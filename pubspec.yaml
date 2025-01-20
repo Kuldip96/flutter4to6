@@ -42,6 +42,8 @@ dependencies:
   country_picker: ^2.0.27
   image_picker: ^1.1.2
   file: ^7.0.1
+  # ai_barcode_scanner: ^6.0.1
+  shared_preferences: 
 
 dev_dependencies:
   flutter_test:
