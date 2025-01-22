@@ -13,6 +13,7 @@ import 'package:demoapp/lacture21.dart';
 import 'package:demoapp/login_screen.dart';
 import 'package:demoapp/mediaquey.dart';
 import 'package:demoapp/todo.dart';
+import 'package:demoapp/todolist.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
@@ -93,7 +94,7 @@ class MyApp extends StatelessWidget {
             //   'lacture16': (context) => Lacture16(),
             //   'lacture17': (context) => Lacture17(),
             // },
-            home: LoginScreen(),
+            home: TodoList(),
           );
         });
   }
